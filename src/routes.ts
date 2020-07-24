@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { createUser } from './services/CreateUser'
+import createUser from './services/CreateUser'
 
 export function helloWorld(req: Request, res: Response) {
     return res.json(createUser({
